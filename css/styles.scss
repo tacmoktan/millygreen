@@ -14,7 +14,7 @@
 }
 
 .top-block-header {
-  background-color: #e8e5e2 !important;
+  background-color: $primary-color !important;
   color: #fff;
   padding: 7px 0;
   box-sizing: border-box;
@@ -25,21 +25,149 @@
     //border: 1px solid;
     padding: 0 15px;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     flex-basis: 0 0 75%;
     line-height: 18px;
-    width:80%;
-    
-    @include mediaQuery($screenWidth-md){
-        width:100%;
-        justify-content: center;
+    width: 80%;
+
+    @include mediaQuery($screenWidth-md) {
+      width: 100%;
+      justify-content: center;
+    }
+
+    @include mediaQuery($screenWidth-sm) {
+      justify-content: flex-start;
     }
 
     span {
-      font-size: 11px;
+      font-size: $font-size-sm;
       color: black;
       text-transform: uppercase;
       margin-right: 30px;
+    }
+  }
+}
+
+.authorization-links {
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  width: 95%;
+
+  .link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    margin: 0 15px;
+    font-size: $font-size-sm;
+  }
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  padding: 15px;
+  box-sizing: border-box;
+
+  .logo-container {
+    flex-basis: 51.5%;
+    text-align: right;
+  }
+
+  .header-search-box {
+    flex-basis: 35%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    font-size: $font-size-sm;
+
+    .search-text-field {
+      padding: 9px 34px 9px 15px;
+      width: 220px;
+      border: none;
+      background: $primary-color;
+      outline: none;
+      font-size: $font-size-sm;
+      &:focus {
+        box-shadow: 0 0 3px 1px #68a8e0;
+      }
+    }
+
+    .search-btn-icon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.navigation-bar {
+  font-size: $font-size-md;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  @include mediaQuery($screenWidth-md) {
+    justify-content: flex-start;
+  }
+
+  .nav-links {
+    padding: 0 14px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+
+    i {
+      margin-left: 4px;
+    }
+
+    &:last-child {
+      width: 150px;
+      text-align: center;
+      justify-content: center;
+      .fas.fa-shopping-cart {
+        font-size: 20px;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .nav-links.active {
+    color: $secondary-color;
+  }
+
+  .nav-links#sale {
+    color: $secondary-color;
+  }
+}
+
+/* MAIN */
+
+/* slick carousel */
+.carousel {
+  .slick-dots {
+    bottom: 3%;
+
+    li {
+      background: $primary-color;
+      width: 20px;
+      height: 5px;
+
+      button {
+        display: none;
+      }
+    }
+
+    .slick-active {
+      background: $secondary-color;
     }
   }
 }
