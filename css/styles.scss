@@ -125,6 +125,10 @@
     text-decoration: none;
     color: black;
 
+    &:hover {
+      color: $secondary-color;
+    }
+
     i {
       margin-left: 4px;
     }
@@ -169,5 +173,105 @@
     .slick-active {
       background: $secondary-color;
     }
+  }
+
+  .carousel-slides-container{
+    .carousel-slides{
+      width:100%;
+    }
+  }
+}
+
+/* products */
+.products-container {
+  box-sizing: border-box;
+
+  .product-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 35px 0;
+
+    .product-intro-title {
+      color: $secondary-color;
+      font-size: $font-size-xl;
+    }
+
+    .product-intro-details {
+      width: 80%;
+      font-size: $font-size-lg;
+    }
+  }
+
+  .product-content {
+    .product {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 10px 20px;
+      box-sizing: border-box;
+
+      .product-image-container {
+        flex-basis: 45%;
+
+        .product-image {
+          min-width: 300px;
+          width: 100%;
+        }
+      }
+
+      .product-image-container.right {
+        order: 1;
+        @include mediaQuery($screenWidth-md) {
+          order: 0;
+        }
+      }
+
+      .product-details {
+        flex-basis: 45%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: $font-size-lg;
+
+        .product-details-title {
+          font-size: $font-size-xl;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .product-banner-container {
+    #banner-img {
+      min-width: 300px;
+      width: 100%;
+    }
+  }
+
+  /* best selling products */
+  .best-selling-products{
+    text-align: center;
+
+    .section-title{
+      padding:25px 0;
+      font-size:$font-size-lg;
+    }
+
+    .carousel-best-selling-products{
+      width:90%;
+      margin: 0 auto;
+
+      .best-selling-products-img-container{
+        border:1px solid black;
+        
+      }
+    }
+
   }
 }
