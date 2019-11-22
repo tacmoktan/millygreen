@@ -41,7 +41,7 @@
 
     span {
       font-size: $font-size-sm;
-      color: black;
+      color: $font-color-light;
       text-transform: uppercase;
       margin-right: 30px;
     }
@@ -58,7 +58,7 @@
   .link {
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color: $font-color-light;
     margin: 0 15px;
     font-size: $font-size-sm;
   }
@@ -123,7 +123,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: $font-color-light;
 
     &:hover {
       color: $secondary-color;
@@ -175,9 +175,9 @@
     }
   }
 
-  .carousel-slides-container{
-    .carousel-slides{
-      width:100%;
+  .carousel-slides-container {
+    .carousel-slides {
+      width: 100%;
     }
   }
 }
@@ -202,6 +202,7 @@
     .product-intro-details {
       width: 80%;
       font-size: $font-size-lg;
+      color: $font-color-light;
     }
   }
 
@@ -238,6 +239,7 @@
         justify-content: center;
         text-align: center;
         font-size: $font-size-lg;
+        color: $font-color-light;
 
         .product-details-title {
           font-size: $font-size-xl;
@@ -255,23 +257,121 @@
   }
 
   /* best selling products */
-  .best-selling-products{
+  .best-selling-products {
     text-align: center;
-
-    .section-title{
-      padding:25px 0;
-      font-size:$font-size-lg;
+    padding: 30px 0;
+    .section-title {
+      margin-bottom: 30px;
+      font-size: ($font-size-xl - 1rem);
+      color: $secondary-color;
     }
 
-    .carousel-best-selling-products{
-      width:90%;
+    .carousel-best-selling-products {
+      width: 85%;
       margin: 0 auto;
+      box-sizing: border-box;
 
-      .best-selling-products-img-container{
-        border:1px solid black;
-        
+      .best-selling-product {
+        box-sizing: border-box;
+        width: 212px;
+        margin: 0 35px;
+        color: $font-color-light;
+        &:focus {
+          outline: none;
+        }
+
+        &:hover {
+          .best-selling-product-img-container {
+            .best-selling-product-img {
+              transform: scale(1.125);
+              border: none;
+            }
+          }
+
+          .product-item-details {
+            .product-item-actions {
+              .action-add-to-basket {
+                border: 1px solid $secondary-color;
+                background: $secondary-color;
+                color: white;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        .best-selling-product-img-container {
+          height: 270px;
+          display: table-cell;
+          vertical-align: middle;
+
+          .best-selling-product-img {
+            border: 1px solid $primary-color;
+          }
+        }
+
+        .product-item-details {
+          display: grid;
+          grid-row-gap: 15px;
+          margin: 35px 0;
+
+          .product-item-title {
+            font-size: 11px;
+            text-transform: uppercase;
+            text-decoration:none;
+            color:$font-color-light;
+            height: 26px;
+
+            &:hover{
+              text-decoration:underline;
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          .product-item-price {
+            &:before {
+              content: "£";
+            }
+          }
+
+          .product-item-actions {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .action-add-to-wishlist {
+              color: $secondary-color;
+              background: white;
+              border: none;
+              cursor: pointer;
+              i.fa-heart {
+                font-size: 16px;
+              }
+              &:focus {
+                outline: none;
+              }
+            }
+
+            .action-add-to-basket {
+              border: 1px solid $primary-color;
+              padding: 5px 10px;
+              background: white;
+              color:$font-color-light;
+              cursor: pointer;
+              i.fa-shopping-cart {
+                margin-right: 4px;
+              }
+              &:focus {
+                outline: none;
+              }
+            }
+
+          }
+
+        }
       }
     }
-
   }
 }
