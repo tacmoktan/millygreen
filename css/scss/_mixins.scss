@@ -4,3 +4,8 @@
     @content;
   }
 }
+
+@mixin responsiveFooter{
+  display:grid;
+  row-gap:20px;
+}

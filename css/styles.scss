@@ -153,7 +153,7 @@
   }
 }
 
-/* MAIN */
+/* main */
 
 /* slick carousel */
 .carousel {
@@ -270,10 +270,9 @@
       width: 85%;
       margin: 0 auto;
       box-sizing: border-box;
-
       .best-selling-product {
         box-sizing: border-box;
-        width: 212px;
+        width: $best-selling-product-img-size;
         margin: 0 35px;
         color: $font-color-light;
         &:focus {
@@ -312,18 +311,18 @@
 
         .product-item-details {
           display: grid;
-          grid-row-gap: 15px;
+          row-gap: 15px;
           margin: 35px 0;
 
           .product-item-title {
             font-size: 11px;
             text-transform: uppercase;
-            text-decoration:none;
-            color:$font-color-light;
+            text-decoration: none;
+            color: $font-color-light;
             height: 26px;
 
-            &:hover{
-              text-decoration:underline;
+            &:hover {
+              text-decoration: underline;
             }
 
             &:focus {
@@ -358,7 +357,7 @@
               border: 1px solid $primary-color;
               padding: 5px 10px;
               background: white;
-              color:$font-color-light;
+              color: $font-color-light;
               cursor: pointer;
               i.fa-shopping-cart {
                 margin-right: 4px;
@@ -367,9 +366,156 @@
                 outline: none;
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
 
+/* footer */
+.footer {
+  background: $background-color-footer;
+  color: $primary-color;
+  padding: 30px 0;
+  .footer-container {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+
+    @include mediaQuery($screenWidth-md) {
+      @include responsiveFooter;
+    }
+
+    #footer-section-left {
+      flex-basis: 30%;
+      #footer-section-contact {
+        display: grid;
+        row-gap: 15px;
+
+        .contact-info {
+          display: flex;
+          border-bottom: 0.5px solid $font-color-footer;
+          padding-bottom: 18px;
+          margin-right: 30px;
+          &:last-child {
+            border: none;
+          }
+          .contact-icon-container {
+            flex-basis: 10%;
+            font-size: 14px;
+            color: lighten($secondary-color, 5%);
+          }
+          .contact-info-details {
+            flex-basis: 90%;
+            font-size: $font-size-md;
+            display: grid;
+            row-gap: 15%;
+
+            .contact-value {
+              color: $font-color-footer;
+            }
+
+            #contact-mail {
+              text-decoration: none;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-section-right {
+      flex-basis: 70%;
+
+      .sub-section.top {
+        display: flex;
+        border-bottom: 0.5px solid $font-color-footer;
+        padding-bottom: 30px;
+        @include mediaQuery($screenWidth-md) {
+          @include responsiveFooter;
+        }
+        #footer-section-about {
+          flex-basis: 50%;
+          display: grid;
+          row-gap: 11.7px;
+          .footer-nav-link {
+            text-decoration: none;
+            color: $font-color-footer;
+            font-size: $font-size-md;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        #footer-section-newsletter {
+          flex-basis: 50%;
+          display: grid;
+          font-size: $font-size-md;
+          @include mediaQuery($screenWidth-md) {
+            @include responsiveFooter;
           }
 
+          .footer-section-title {
+            font-size: $font-size-footer-title;
+          }
+          .newsletter-description {
+            color: $font-color-footer;
+          }
+        }
+
+        .footer-section-form {
+          width: 100%;
+          height: 30px;
+          .input-email-field {
+            height: inherit;
+            padding: 0 10px;
+            width: 80%;
+          }
+
+          .submit-btn {
+            position: absolute;
+            padding: 5px 15px;
+            background: lighten($secondary-color, 5%);
+            border: none;
+            height: inherit;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .sub-section.bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        @include mediaQuery($screenWidth-md) {
+          @include responsiveFooter;
+        }
+        #epaymentportal-image-container {
+          .epaymentportal-img {
+            width: 180px;
+          }
+        }
+        #footer-copyright-text {
+          font-size: 13px;
+          flex-basis: 45%;
+        }
+
+        #footer-social-icons {
+          .social-link {
+            color: white;
+            padding: 5px 7px;
+            border-radius: 50%;
+            background: darken($primary-color, 15%);
+
+            &:hover {
+              background: lighten($secondary-color, 5%);
+            }
+          }
         }
       }
     }
