@@ -1,3 +1,17 @@
+
+@mixin fontstyles-title{
+  font-size: $font-size-xl;
+  font-weight:100;
+  font-family: $secondary-fontFamily;
+  color: $secondary-color;
+}
+
+@mixin fontstyles-description{
+  margin-top:10px;
+  font-size: $font-size-for-details;
+  color: $font-color-light;
+}
+
 //media query
 @mixin mediaQuery($width) {
   @media screen and (max-width: $width) {

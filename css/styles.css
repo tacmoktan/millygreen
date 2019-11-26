@@ -1,7 +1,12 @@
 @charset "UTF-8";
 @font-face {
-  src: url(fonts/GillSansStd.otf);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  src: url(../../fonts/GillSansStd.otf);
+  font-family: "GillSans";
+}
+
+@font-face {
+  src: url(../../fonts/TravelingTypewriter.ttf);
+  font-family: "Travelling Typewriter";
 }
 
 * {
@@ -253,18 +258,36 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 35px 0;
+  padding: 40px 0;
 }
 
 .products-container .product-intro .product-intro-title {
+  font-size: 2.1rem;
+  font-weight: 100;
+  font-family: "Travelling Typewriter", Calibri, "Trebuchet MS", sans-serif;
   color: green;
-  font-size: 3rem;
 }
 
 .products-container .product-intro .product-intro-details {
   width: 80%;
-  font-size: 20px;
+  margin-top: 10px;
+  font-size: 19px;
   color: rgba(0, 0, 0, 0.692);
+}
+
+.products-container .product-content {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 40px;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+  .products-container .product-content {
+    width: 100vw;
+    margin: 0;
+  }
 }
 
 .products-container .product-content .product {
@@ -279,7 +302,6 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 10px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -311,7 +333,7 @@
 .products-container .product-content .product .product-details {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
-  padding: 20px;
+  padding: 0 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,14 +344,28 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
-  font-size: 20px;
-  color: rgba(0, 0, 0, 0.692);
+}
+
+@media screen and (max-width: 576px) {
+  .products-container .product-content .product .product-details {
+    text-align: center;
+    -ms-flex-preferred-size: 95%;
+        flex-basis: 95%;
+    padding: 20px;
+  }
 }
 
 .products-container .product-content .product .product-details .product-details-title {
-  font-size: 3rem;
+  font-size: 2.1rem;
+  font-weight: 100;
+  font-family: "Travelling Typewriter", Calibri, "Trebuchet MS", sans-serif;
   color: green;
+}
+
+.products-container .product-content .product .product-details .product-details-description {
+  margin-top: 10px;
+  font-size: 19px;
+  color: rgba(0, 0, 0, 0.692);
 }
 
 .products-container .product-banner-container #banner-img {
@@ -339,13 +375,16 @@
 
 .products-container .best-selling-products {
   text-align: center;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 .products-container .best-selling-products .section-title {
-  margin-bottom: 30px;
-  font-size: 2rem;
+  margin-bottom: 40px;
+  font-size: 2.1rem;
+  font-weight: 100;
+  font-family: "Travelling Typewriter", Calibri, "Trebuchet MS", sans-serif;
   color: green;
+  font-weight: 600;
 }
 
 .products-container .best-selling-products .carousel-best-selling-products {
@@ -498,7 +537,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 0.5px solid #A8A8A8;
+  border-bottom: 0.5px solid #a8a8a8;
   padding-bottom: 18px;
   margin-right: 30px;
 }
@@ -524,7 +563,7 @@
 }
 
 .footer .footer-container #footer-section-left #footer-section-contact .contact-info .contact-info-details .contact-value {
-  color: #A8A8A8;
+  color: #a8a8a8;
 }
 
 .footer .footer-container #footer-section-left #footer-section-contact .contact-info .contact-info-details #contact-mail {
@@ -544,7 +583,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 0.5px solid #A8A8A8;
+  border-bottom: 0.5px solid #a8a8a8;
   padding-bottom: 30px;
 }
 
@@ -566,7 +605,7 @@
 
 .footer .footer-container .footer-section-right .sub-section.top #footer-section-about .footer-nav-link {
   text-decoration: none;
-  color: #A8A8A8;
+  color: #a8a8a8;
   font-size: 13px;
 }
 
@@ -595,7 +634,7 @@
 }
 
 .footer .footer-container .footer-section-right .sub-section.top #footer-section-newsletter .newsletter-description {
-  color: #A8A8A8;
+  color: #a8a8a8;
 }
 
 .footer .footer-container .footer-section-right .sub-section.top .footer-section-form {
