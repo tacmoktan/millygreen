@@ -1,11 +1,11 @@
 //font
 @font-face {
-  src: url(../../fonts/GillSansStd.otf);
+  src: url(../fonts/GillSansStd.otf);            //with respect to css directory
   font-family: "GillSans";
 }
 
 @font-face {
-  src: url(../../fonts/TravelingTypewriter.woff);
+  src: url(../fonts/TravelingTypewriter.woff);   //with respect to css directory
   font-family: "Traveling Typewriter";
 }
 
@@ -35,5 +35,6 @@ $border-color: #eeeeee;
 
 $primary-color: #e8e5e2;
 $secondary-color: green;
+$extra-color:#E90081;
 
 $primary-padding:40px;

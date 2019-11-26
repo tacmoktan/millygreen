@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @font-face {
-  src: url(../../fonts/GillSansStd.otf);
+  src: url(../fonts/GillSansStd.otf);
   font-family: "GillSans";
 }
 
 @font-face {
-  src: url(../../fonts/TravelingTypewriter.woff);
+  src: url(../fonts/TravelingTypewriter.woff);
   font-family: "Traveling Typewriter";
 }
 
@@ -209,7 +209,7 @@
 }
 
 .navigation-bar .nav-links#sale {
-  color: green;
+  color: #E90081;
 }
 
 /* main */
@@ -413,8 +413,8 @@
 }
 
 .products-container .best-selling-products .carousel-best-selling-products .best-selling-product:hover .product-item-details .product-item-actions .action-add-to-basket {
-  border: 1px solid green;
-  background: green;
+  border: 1px solid #E90081;
+  background: #E90081;
   color: white;
   cursor: pointer;
 }
@@ -469,7 +469,7 @@
 }
 
 .products-container .best-selling-products .carousel-best-selling-products .best-selling-product .product-item-details .product-item-actions .action-add-to-wishlist {
-  color: green;
+  color: #E90081;
   background: white;
   border: none;
   cursor: pointer;
