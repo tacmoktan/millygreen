@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  src: url(../../fonts/TravelingTypewriter.ttf);
+  src: url(../../fonts/TravelingTypewriter.otf);
   font-family: "Travelling Typewriter";
 }
 
@@ -264,7 +264,7 @@
 .products-container .product-intro .product-intro-title {
   font-size: 2.1rem;
   font-weight: 100;
-  font-family: "Travelling Typewriter", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Travelling Typewriter";
   color: green;
 }
 
@@ -358,7 +358,7 @@
 .products-container .product-content .product .product-details .product-details-title {
   font-size: 2.1rem;
   font-weight: 100;
-  font-family: "Travelling Typewriter", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Travelling Typewriter";
   color: green;
 }
 
@@ -382,7 +382,7 @@
   margin-bottom: 40px;
   font-size: 2.1rem;
   font-weight: 100;
-  font-family: "Travelling Typewriter", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Travelling Typewriter";
   color: green;
   font-weight: 600;
 }
