@@ -5,14 +5,14 @@
 }
 
 @font-face {
-  src: url(../../fonts/TravelingTypewriter.otf);
-  font-family: "Travelling Typewriter";
+  src: url(../../fonts/TravelingTypewriter.woff);
+  font-family: "Traveling Typewriter";
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "GillSans";
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -264,7 +264,7 @@
 .products-container .product-intro .product-intro-title {
   font-size: 2.1rem;
   font-weight: 100;
-  font-family: "Travelling Typewriter";
+  font-family: "Traveling Typewriter";
   color: green;
 }
 
@@ -358,7 +358,7 @@
 .products-container .product-content .product .product-details .product-details-title {
   font-size: 2.1rem;
   font-weight: 100;
-  font-family: "Travelling Typewriter";
+  font-family: "Traveling Typewriter";
   color: green;
 }
 
@@ -382,7 +382,7 @@
   margin-bottom: 40px;
   font-size: 2.1rem;
   font-weight: 100;
-  font-family: "Travelling Typewriter";
+  font-family: "Traveling Typewriter";
   color: green;
   font-weight: 600;
 }
