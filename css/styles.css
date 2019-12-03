@@ -262,7 +262,7 @@
 }
 
 .products-container .product-intro .product-intro-title {
-  font-size: 2.1rem;
+  font-size: 2.6rem;
   font-weight: 100;
   font-family: "Traveling Typewriter";
   color: green;
@@ -356,7 +356,7 @@
 }
 
 .products-container .product-content .product .product-details .product-details-title {
-  font-size: 2.1rem;
+  font-size: 2.6rem;
   font-weight: 100;
   font-family: "Traveling Typewriter";
   color: green;
@@ -366,6 +366,14 @@
   margin-top: 10px;
   font-size: 19px;
   color: rgba(0, 0, 0, 0.692);
+}
+
+.products-container .product-content .product .product-details .list {
+  margin: 15px auto;
+}
+
+.products-container .product-content .product .product-details .list .point {
+  font-family: "Traveling Typewriter";
 }
 
 .products-container .product-banner-container #banner-img {
@@ -380,7 +388,7 @@
 
 .products-container .best-selling-products .section-title {
   margin-bottom: 40px;
-  font-size: 2.1rem;
+  font-size: 2.6rem;
   font-weight: 100;
   font-family: "Traveling Typewriter";
   color: green;
