@@ -166,7 +166,27 @@
     }
 
     .slick-active {
-      background: $secondary-color;
+      background: $extra-color;
+    }
+  }
+
+  .slick-arrow:before{
+    font-size:60px;
+    @include mediaQuery($screenWidth-md){
+      font-size:$font-size-lg;
+    }
+  }
+  .slick-prev{
+    left:35px;
+    @include mediaQuery($screenWidth-md){
+      left:15px;
+    }
+  }
+
+  .slick-next{
+    right:50px;
+    @include mediaQuery($screenWidth-md){
+      right:20px;
     }
   }
 
@@ -253,6 +273,8 @@
 
         .list {
           margin: 15px auto;
+          list-style-position:inside;
+          
           .point {
             font-family: $secondary-fontFamily;
           }

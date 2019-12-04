@@ -229,7 +229,37 @@
 }
 
 .carousel .slick-dots .slick-active {
-  background: green;
+  background: #E90081;
+}
+
+.carousel .slick-arrow:before {
+  font-size: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel .slick-arrow:before {
+    font-size: 20px;
+  }
+}
+
+.carousel .slick-prev {
+  left: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel .slick-prev {
+    left: 15px;
+  }
+}
+
+.carousel .slick-next {
+  right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel .slick-next {
+    right: 20px;
+  }
 }
 
 .carousel .carousel-slides-container .carousel-slides {
@@ -370,6 +400,7 @@
 
 .products-container .product-content .product .product-details .list {
   margin: 15px auto;
+  list-style-position: inside;
 }
 
 .products-container .product-content .product .product-details .list .point {
