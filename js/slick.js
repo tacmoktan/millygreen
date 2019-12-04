@@ -1,7 +1,7 @@
 /* front-page sliders */
 $(document).ready(function () {
     $('.carousel').slick({
-        arrows: false,
+        arrows: true,
         dots: true,
         autoplay: true,
         lazyLoad:'progressive'
