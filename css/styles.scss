@@ -137,6 +137,10 @@
         margin-right: 4px;
       }
     }
+
+    #millygreen-cart{
+      width:24px;
+    }
   }
 
   .nav-links.active {
@@ -298,6 +302,7 @@
       margin-bottom: $primary-padding;
       @include fontstyles-title;
       font-weight: 600;
+      font-size:2.6em;
     }
 
     .carousel-best-selling-products {
@@ -332,6 +337,8 @@
             }
           }
         }
+
+        
 
         .best-selling-product-img-container {
           height: 270px;

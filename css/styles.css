@@ -204,6 +204,10 @@
   margin-right: 4px;
 }
 
+.navigation-bar .nav-links #millygreen-cart {
+  width: 24px;
+}
+
 .navigation-bar .nav-links.active {
   color: green;
 }
@@ -292,7 +296,7 @@
 }
 
 .products-container .product-intro .product-intro-title {
-  font-size: 2.6rem;
+  font-size: 2.1rem;
   font-weight: 100;
   font-family: "Traveling Typewriter";
   color: green;
@@ -386,7 +390,7 @@
 }
 
 .products-container .product-content .product .product-details .product-details-title {
-  font-size: 2.6rem;
+  font-size: 2.1rem;
   font-weight: 100;
   font-family: "Traveling Typewriter";
   color: green;
@@ -419,11 +423,12 @@
 
 .products-container .best-selling-products .section-title {
   margin-bottom: 40px;
-  font-size: 2.6rem;
+  font-size: 2.1rem;
   font-weight: 100;
   font-family: "Traveling Typewriter";
   color: green;
   font-weight: 600;
+  font-size: 2.6em;
 }
 
 .products-container .best-selling-products .carousel-best-selling-products {
