@@ -432,6 +432,7 @@
 }
 
 .products-container .best-selling-products .carousel-best-selling-products {
+  max-width: 1140px;
   width: 84.5%;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
@@ -442,8 +443,14 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 212px;
-  margin: 0 35px;
+  margin: 0 45px;
   color: rgba(0, 0, 0, 0.692);
+}
+
+@media (max-width: 1265px) {
+  .products-container .best-selling-products .carousel-best-selling-products .best-selling-product {
+    margin: 0 30px;
+  }
 }
 
 .products-container .best-selling-products .carousel-best-selling-products .best-selling-product:focus {

@@ -4,17 +4,17 @@ $(document).ready(function () {
         arrows: true,
         dots: true,
         autoplay: true,
-        lazyLoad:'progressive'
+        lazyLoad: 'progressive'
     });
 });
 
 /* best selling products sliders */
 $(document).ready(function () {
     $('.carousel-best-selling-products').slick({
-        arrows:false,
+        arrows: false,
         slidesToShow: 4,
         autoplay: true,
-        lazyLoad:'progressive',
-        variableWidth: true
+        lazyLoad: 'progressive',
+        variableWidth: true,
     });
 });
