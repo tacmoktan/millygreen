@@ -19,9 +19,13 @@ window.onresize = () => {
 }
 
 navbar.onclick = (e) => {
-    if (e.target === bar)
-        isNavbarClosed ? openNavbar() : closeNavbar()
-    else
-        closeNavbar()
+
+    if (window.innerWidth < 768) {
+        if (e.target === bar)
+            isNavbarClosed ? openNavbar() : closeNavbar()
+        else
+            closeNavbar()
+    }
+
 }
 
